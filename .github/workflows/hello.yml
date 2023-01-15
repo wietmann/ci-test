@@ -1,0 +1,12 @@
+---
+name: Test workflow
+on:
+  push:
+
+jobs:
+  peepoo:
+    name: "PeePoo"
+    runs-on: debian-latest
+    steps:
+      - name: Run test command
+        run: echo "hello world"
