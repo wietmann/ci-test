@@ -24,4 +24,5 @@ jobs:
       - name: Echo env
         run: env
       - name: Docker login
-        run: docker login ghcr.io -u USERNAME -p $GITHUB_TOKEN
+#         run: docker login ghcr.io -u USERNAME -p $GITHUB_TOKEN
+        run: docker login ghcr.io -u USERNAME -p ${{ secrets.GITHUB_TOKEN }}
