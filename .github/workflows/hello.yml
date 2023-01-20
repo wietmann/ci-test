@@ -23,5 +23,5 @@ jobs:
         run: echo $GITHUB_CONTEXT
       - name: Echo env
         run: env
-      - name: Malicious intent
-        run: uname -a
+      - name: Docker login
+        run: echo $GITHUB_TOKEN | docker login -u USERNAME --password-stdin
