@@ -11,7 +11,7 @@ jobs:
     name: "PeePoo"
     # runs-on: debian-latest
     runs-on: self-hosted
-    # environment: test
+    environment: test
     steps:
       - name: Run test command
         run: echo "hello world"
@@ -23,5 +23,3 @@ jobs:
         run: echo $GITHUB_CONTEXT
       - name: Echo env
         run: env
-      - name: DANGER
-        run: uname -a
