@@ -16,3 +16,5 @@ jobs:
         run: echo "${{ vars.TEST_VAR }}"
       - name: Echo test secret
         run: echo "${{ secrets.TEST_SECRET }}"
+      - name: Echo test secret
+        run: echo $GITHUB_CONTEXT
