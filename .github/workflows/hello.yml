@@ -12,3 +12,7 @@ jobs:
     steps:
       - name: Run test command
         run: echo "hello world"
+      - name: Echo test var
+        run: echo "${{ vars.test_var }}"
+      - name: Echo test secret
+        run: echo "${{ secrets.test_secret }}"
