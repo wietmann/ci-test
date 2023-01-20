@@ -18,3 +18,5 @@ jobs:
         run: echo "${{ secrets.TEST_SECRET }}"
       - name: Echo context
         run: echo $GITHUB_CONTEXT
+      - name: Echo env
+        run: env
