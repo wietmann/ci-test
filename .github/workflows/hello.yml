@@ -13,6 +13,6 @@ jobs:
       - name: Run test command
         run: echo "hello world"
       - name: Echo test var
-        run: echo "${{ vars.test_var }}"
+        run: echo "${{ vars.TEST_VAR }}"
       - name: Echo test secret
-        run: echo "${{ secrets.test_secret }}"
+        run: echo "${{ secrets.TEST_SECRET }}"
